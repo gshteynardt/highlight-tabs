@@ -31,30 +31,6 @@ body {
   padding-top: 10px;
 }
 
-.tab {
-  position: relative;
-  background: #6e45df;
-  min-width: 120px;
-  font-size: 14px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  transition: 0.3s ease all;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.tab a {
-  display: block;
-  padding: 12px 25px;
-  color: #e1daf5;
-  text-decoration: none;
-}
-
-.tab a.is-active {
-  background: #5131a9;
-  color: #eee;
-}
-
 .address-bar {
   background: #5533b3;
   padding: 8px;
