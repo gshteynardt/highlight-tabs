@@ -1,51 +1,23 @@
-import React, { useState, MouseEvent } from 'react';
+import React from 'react';
 
 import './App.scss';
-import Tab from './components/Tab';
-import { Style } from './types';
-
-const initialValue = {
-  '--left': 0,
-  '--opacity': 0,
-};
+import Tab from './components/Tabs/components/Tab';
+import Tabs from './components/Tabs';
 
 function App() {
-  const [highlightStyle, setHighlightStyle] = useState<Style>(initialValue);
-
-  const moveHighlight = (e: MouseEvent<HTMLElement>) => {
-
-    setHighlightStyle({
-      '--left': e.nativeEvent.offsetX - 150,
-    });
-  };
-
-  const hideHighlight = (e: MouseEvent<HTMLElement>) => {
-
-    setHighlightStyle(old => ({
-      ...old,
-      '--left': e.nativeEvent.offsetX - 150,
-      '--opacity': 0,
-    }));
-  };
-
   return (
-    <div className="app">
-      <div className="browser">
-        <div className="tabs">
-          <Tab
-            onMouseOut={hideHighlight}
-            onMouseMove={moveHighlight}
-            style={highlightStyle}
-          >
-            Home
+    <div className="App">
+      <Tabs className="Tabs">
+        <Tab label="Home">
+          Home
           </Tab>
-          <div className="tab">
-          </div>
-          <div className="tab">
-          </div>
-        </div>
-        <div className="viewport">Pages Go Here</div>
-      </div>
+        <Tab label="Page">
+          Page
+          </Tab>
+        <Tab label="About">
+          About
+          </Tab>
+      </Tabs>
     </div>
   );
 }

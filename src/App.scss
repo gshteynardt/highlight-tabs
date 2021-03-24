@@ -1,3 +1,7 @@
+$LIGHT_GREEN_500: #cbf558;
+$LIGHT_GREEN_700: #96b83b;
+$LIGHT_GREEN_600: #b8e048;
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
@@ -5,56 +9,11 @@ body {
   padding: 0;
 }
 
-.app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #634cec;
-  min-height: 100vh;
-}
-
-.browser {
+.App {
   display: flex;
   flex-direction: column;
-  background: #ffb91f;
-  border-radius: 5px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  min-width: 60%;
-  min-height: 50vh;
-}
-
-.tabs {
-  flex-shrink: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: flex;
-  padding-top: 10px;
-}
-
-.address-bar {
-  background: #5533b3;
-  padding: 8px;
-}
-
-.address-bar input {
-  background: #3a2081;
-  color: #eee;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  width: 100%;
-  padding: 8px 20px;
-  font-size: 18px;
-}
-
-.viewport {
-  display: flex;
   align-items: center;
   justify-content: center;
-  background: #5131a9;
-  color: #dacff7;
-  flex: 1;
-  flex-grow: 1;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  background: $LIGHT_GREEN_600;
+  min-height: 100vh;
 }
