@@ -10,13 +10,13 @@ function App() {
       <Tabs className="Tabs">
         <Tab label="Home">
           Home
-          </Tab>
+        </Tab>
         <Tab label="Page">
           Page
-          </Tab>
+        </Tab>
         <Tab label="About">
           About
-          </Tab>
+        </Tab>
       </Tabs>
     </div>
   );
